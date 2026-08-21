@@ -4,11 +4,11 @@
   --mint-35: color-mix(in oklch, var(--mint) 35%, black);
   --mint-60: color-mix(in oklch, var(--mint) 60%, black);
 
-  --bg: #0A0C0B;
-  --bg-alt: #0E1310;
-  --panel: #111513;
-  --border: #1D2422;
-  --border-soft: #1B211F;
+  --bg: #161918;
+  --bg-alt: #1A1F1D;
+  --panel: #1D211F;
+  --border: #29302E;
+  --border-soft: #272D2B;
   --text: #EDEFEE;
   --text-muted: #B7BFBA;
   --text-dim: #8A938E;
@@ -88,7 +88,7 @@ h2 { font-size: 36px; font-weight: 700; margin-bottom: 14px; }
 .eyebrow-text { font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dim); }
 
 /* Hero */
-.hero { position: relative; padding-top: 120px; padding-bottom: 100px; overflow: hidden; background-image: radial-gradient(circle, #171D1A 1px, transparent 1px); background-size: 28px 28px; }
+.hero { position: relative; padding-top: 120px; padding-bottom: 100px; overflow: hidden; background-image: radial-gradient(circle, #232A28 1px, transparent 1px); background-size: 28px 28px; }
 .hero-split { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 64px; align-items: center; }
 .h1-size { font-size: 56px; font-weight: 700; line-height: 1.08; margin-bottom: 24px; }
 .hero-lead { font-size: 17px; line-height: 1.6; color: var(--text-muted); max-width: 480px; margin-bottom: 36px; }
@@ -120,9 +120,6 @@ h2 { font-size: 36px; font-weight: 700; margin-bottom: 14px; }
 .price { font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700; margin: 20px 0 4px; }
 .price-unit { font-size: 12px; color: var(--text-faint); margin-bottom: 24px; }
 .feature-list { list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #C7CDC9; margin-bottom: 28px; }
-.price-card-pop { position: relative; transform: translateY(-14px); border: 1px solid var(--mint); box-shadow: 0 0 0 1px var(--mint), 0 24px 60px -30px var(--mint-60); }
-.price-card-pop h3 { margin-top: 8px; }
-.badge-pop { position: absolute; top: -12px; left: 32px; background: var(--mint); color: var(--bg); font-size: 11px; font-weight: 600; padding: 4px 12px; letter-spacing: 0.04em; }
 
 /* Kadra */
 .teacher-card { padding: 24px; text-align: center; }
@@ -166,7 +163,7 @@ h2 { font-size: 36px; font-weight: 700; margin-bottom: 14px; }
 .contact-form { display: flex; flex-direction: column; gap: 14px; }
 .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .contact-form input, .contact-form textarea {
-  background: #0F1311; border: 1px solid var(--border-soft); color: var(--text);
+  background: #1B1F1D; border: 1px solid var(--border-soft); color: var(--text);
   font-family: inherit; font-size: 14px; padding: 13px 14px; width: 100%;
 }
 .contact-form input::placeholder, .contact-form textarea::placeholder { color: var(--text-faint); }
