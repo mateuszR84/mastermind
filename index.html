@@ -142,7 +142,7 @@
         <div class="card subject-card">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="1.6"><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/><circle cx="12" cy="12" r="1.4" fill="var(--mint)"/></svg>
           <h3>Biologia</h3>
-          <p class="muted small">Mechanika, elektryczność i przygotowanie do egzaminów.</p>
+          <p class="muted small">Anatomia, ekologia i genetyka oraz przygotowanie do egzaminów.</p>
           <span class="level">Szkoła Podstawowa · Liceum</span>
         </div>
 
@@ -358,13 +358,13 @@
 
       <div class="kontakt-split">
         <div class="kontakt-info">
-          <div class="card map-placeholder">
-            <span class="placeholder-tag">[MAPA — wstawić mapę lokalizacji po wdrożeniu]</span>
+          <div class="card map-embed">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2534.3346703663055!2d21.16394397680763!3d50.56514177909876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d580b982cc079%3A0x8bd055ff304e0a25!2zRMWCdWdhIDYsIDI4LTIwMCBTdGFzesOzdw!5e0!3m2!1spl!2spl!4v1787566170539!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </div>
           <div class="info-list">
             <div class="info-row">
               <i class="fa-solid fa-location-dot fa-fw" aria-hidden="true"></i>
-              <span class="placeholder-tag">Staszów, ul. Długa 1</span>
+              <span class="placeholder-tag">Staszów, ul. Długa 6</span>
             </div>
             <div class="info-row">
               <i class="fa-solid fa-phone fa-fw" aria-hidden="true"></i>
@@ -374,22 +374,33 @@
               <i class="fa-regular fa-envelope fa-fw" aria-hidden="true"></i>
               <a href="mailto:kontakt@szkola-mastermind.pl" class="placeholder-tag">kontakt@szkola-mastermind.pl</a>
             </div>
-            <div class="info-row">
-              <i class="fa-brands fa-facebook fa-fw" aria-hidden="true"></i>
-              <a href="https://www.facebook.com/profile.php?id=61587799349057" target="_blank" rel="noopener noreferrer" class="fb-link">facebook.com/MasterMindPrivateSchool</a>
+            <div class="info-row info-row-social">
+              <a href="https://www.facebook.com/profile.php?id=61587799349057" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fa-brands fa-facebook fa-fw" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Formularz statyczny: bez backendu nie wysyła wiadomości.
-             Podłącz np. Formspree / EmailJS / własny endpoint (action + method), zanim strona pójdzie live. -->
-        <form class="contact-form">
+        <form class="contact-form" action="https://formspree.io/f/xyegaqlo" method="POST">
+          <div id="kontakt-dziekujemy" class="form-success" role="status">Dziękujemy! Wiadomość została wysłana — odezwiemy się najszybciej, jak to możliwe.</div>
+          <input type="hidden" name="_subject" value="Nowe zgłoszenie ze strony Master Mind">
+          <input type="hidden" name="_next" value="/#kontakt-dziekujemy">
+          <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="form-row-2">
             <input type="text" name="imie" placeholder="Imię i nazwisko" required>
             <input type="tel" name="telefon" placeholder="Telefon">
           </div>
           <input type="email" name="email" placeholder="Adres e-mail" required>
-          <input type="text" name="przedmiot" placeholder="Interesujący Cię przedmiot">
+          <select name="przedmiot" aria-label="Interesujący Cię przedmiot">
+            <option value="" selected disabled>Interesujący Cię przedmiot</option>
+            <option value="matematyka">Matematyka</option>
+            <option value="jezyk-polski">Język polski</option>
+            <option value="jezyk-angielski">Język angielski</option>
+            <option value="biologia">Biologia</option>
+            <option value="chemia">Chemia</option>
+            <option value="inny">Inny</option>
+          </select>
           <textarea name="wiadomosc" rows="4" placeholder="Wiadomość"></textarea>
           <button type="submit" class="btn btn-primary btn-block">Wyślij zapytanie</button>
         </form>
@@ -412,9 +423,6 @@
       <a href="#kadra" class="nav-link">Kadra</a>
       <a href="#faq" class="nav-link">FAQ</a>
     </div>
-    <a href="https://www.facebook.com/profile.php?id=61587799349057" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-btn">
-      <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-    </a>
   </footer>
 
 </body>
