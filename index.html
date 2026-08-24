@@ -386,9 +386,9 @@
         </div>
 
         <form class="contact-form" action="https://formspree.io/f/xyegaqlo" method="POST">
-          <div id="kontakt-dziekujemy" class="form-success" role="status">Dziękujemy! Wiadomość została wysłana — odezwiemy się najszybciej, jak to możliwe.</div>
+          <div id="kontakt-dziekujemy" class="form-banner form-banner-success" role="status">Dziękujemy! Wiadomość została wysłana — odezwiemy się najszybciej, jak to możliwe.</div>
+          <div id="kontakt-blad" class="form-banner form-banner-error" role="alert">Coś poszło nie tak. Spróbuj ponownie albo napisz bezpośrednio: <a href="mailto:kontakt@szkola-mastermind.pl">kontakt@szkola-mastermind.pl</a></div>
           <input type="hidden" name="_subject" value="Nowe zgłoszenie ze strony Master Mind">
-          <input type="hidden" name="_next" value="https://szkola-mastermind.pl/#kontakt-dziekujemy">
           <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="form-row-2">
             <input type="text" name="imie" placeholder="Imię i nazwisko" required>
@@ -432,8 +432,8 @@
     <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
   </button>
 
-  <!-- Jedyny inny skrypt poza kitem Font Awesome: pokazuje/ukrywa przycisk "do góry"
-       zależnie od pozycji scrolla i obsługuje płynny powrót na górę. -->
+  <!-- Pozostałe pierwszoosobowe skrypty poza kitem Font Awesome — patrz konwencja JS w CLAUDE.md. -->
   <script src="back-to-top.js" defer></script>
+  <script src="contact-form.js" defer></script>
 </body>
 </html>

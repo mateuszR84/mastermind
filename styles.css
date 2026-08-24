@@ -165,11 +165,11 @@ a.placeholder-tag:hover { color: var(--mint); }
 .info-row-social i { font-size: 26px; margin-top: 0; }
 .info-row-social a:hover i { color: var(--placeholder); }
 
-.form-success {
-  display: none; background: color-mix(in oklch, var(--mint) 15%, transparent);
-  border: 1px solid var(--mint); color: var(--mint); font-size: 14px; padding: 14px 16px;
-}
-.form-success:target { display: block; }
+.form-banner { display: none; font-size: 14px; padding: 14px 16px; border: 1px solid; }
+.form-banner.is-visible { display: block; }
+.form-banner-success { background: color-mix(in oklch, var(--mint) 15%, transparent); border-color: var(--mint); color: var(--mint); }
+.form-banner-error { background: color-mix(in oklch, var(--placeholder) 15%, transparent); border-color: var(--placeholder); color: var(--placeholder); }
+.form-banner-error a { color: var(--placeholder); text-decoration: underline; text-underline-offset: 2px; }
 
 .hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 
