@@ -222,24 +222,27 @@
       <h2>Nasi nauczyciele</h2>
       <p class="section-lead placeholder-tag">Poznaj naszą kadrę</p>
 
+      <!-- Zdjęcia nauczycieli: user-placeholder.jpg to tymczasowy placeholder dla wszystkich czterech.
+           Docelowo podmienić src (i alt="Imię Nazwisko") na realne zdjęcie każdego nauczyciela —
+           sześciokąt (clip-path) przytnie je automatycznie, obraz wypełnia go przez object-fit: cover. -->
       <div class="grid-4">
         <div class="card teacher-card">
-          <div class="teacher-avatar"><span>IN</span></div>
+          <div class="teacher-avatar"><img src="user-placeholder.jpg" alt=""></div>
           <h3 class="placeholder-tag">mgr Bożena Tałaj</h3>
           <div class="teacher-subject">Język polski</div>
         </div>
         <div class="card teacher-card">
-          <div class="teacher-avatar"><span>IN</span></div>
+          <div class="teacher-avatar"><img src="user-placeholder.jpg" alt=""></div>
           <h3 class="placeholder-tag">mgr Aleksandra Wyrazik</h3>
           <div class="teacher-subject">Matematyka</div>
         </div>
         <div class="card teacher-card">
-          <div class="teacher-avatar"><span>IN</span></div>
+          <div class="teacher-avatar"><img src="user-placeholder.jpg" alt=""></div>
           <h3 class="placeholder-tag">[Imię Nazwisko]</h3>
           <div class="teacher-subject">Język angielski</div>
         </div>
         <div class="card teacher-card">
-          <div class="teacher-avatar"><span>IN</span></div>
+          <div class="teacher-avatar"><img src="user-placeholder.jpg" alt=""></div>
           <h3 class="placeholder-tag">[Imię Nazwisko]</h3>
           <div class="teacher-subject">Biologia i Chemia</div>
           <!-- <p class="muted small">[Krótki opis doświadczenia i wykształcenia]</p> -->
@@ -425,5 +428,12 @@
     </div>
   </footer>
 
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Wróć na górę strony">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Jedyny inny skrypt poza kitem Font Awesome: pokazuje/ukrywa przycisk "do góry"
+       zależnie od pozycji scrolla i obsługuje płynny powrót na górę. -->
+  <script src="back-to-top.js" defer></script>
 </body>
 </html>

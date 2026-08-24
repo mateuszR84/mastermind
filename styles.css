@@ -125,12 +125,13 @@ a.placeholder-tag:hover { color: var(--mint); }
 /* Kadra */
 .teacher-card { padding: 24px; text-align: center; }
 .teacher-avatar {
-  width: 64px; height: 64px; margin: 0 auto 16px;
+  width: 96px; height: 96px; margin: 0 auto 20px;
   background: var(--mint-20); border: 1px solid var(--mint-35);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   display: flex; align-items: center; justify-content: center;
 }
-.teacher-avatar span { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: var(--mint); font-size: 15px; }
+.teacher-avatar span { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: var(--mint); font-size: 20px; }
+.teacher-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .teacher-card h3 { font-size: 15px; margin-bottom: 4px; }
 .teacher-subject { font-size: 12px; color: var(--mint); margin-bottom: 8px; }
 
@@ -194,6 +195,19 @@ a.placeholder-tag:hover { color: var(--mint); }
 .footer-credit a { color: var(--text-faint); text-decoration: underline; text-underline-offset: 2px; }
 .footer-credit a:hover { color: var(--mint); }
 .footer-links { display: flex; gap: 24px; }
+
+/* Back to top */
+.back-to-top {
+  position: fixed; right: 24px; bottom: 24px; z-index: 40;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--mint); border: 1px solid var(--mint);
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+  opacity: 0; visibility: hidden; transform: translateY(8px);
+  transition: opacity .25s ease, transform .25s ease, visibility .25s ease, background-color .2s ease;
+}
+.back-to-top i { color: var(--bg); font-size: 16px; }
+.back-to-top:hover { background: #ffffff; border-color: #ffffff; }
+.back-to-top.is-visible { opacity: 1; visibility: visible; transform: none; }
 .footer-links .nav-link { font-size: 13px; }
 
 /* Responsive */

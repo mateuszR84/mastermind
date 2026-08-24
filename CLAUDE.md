@@ -35,11 +35,13 @@ There are no tests, linter, or package manager. Changes are verified visually.
   ```
   The SVG can't load Space Grotesk from Google Fonts, so the monogram falls back to a system sans-serif; `apple-touch-icon.png` gets a solid `--bg` backdrop because iOS handles transparency poorly.
 - Two breakpoints only: 900px (nav hides, grids collapse, padding shrinks) and 560px.
-- **No first-party JavaScript.** The only script is the Font Awesome kit; the FAQ accordion uses native `<details>` and smooth scrolling uses CSS `scroll-behavior`. Prefer keeping behaviour CSS-only.
+- **First-party JavaScript is limited to one file: `back-to-top.js`.** It toggles `.is-visible` on `#back-to-top` past a 600px scroll threshold and smooth-scrolls to top on click — this specific "appear after scrolling" behavior isn't reliably doable in CSS alone across browsers (unlike the FAQ accordion, which uses native `<details>`, or nav scrolling, which uses CSS `scroll-behavior`). Prefer CSS-only for anything new; only reach for JS when the effect genuinely requires reading scroll position or other runtime state.
 
 ## Unfinished content (intentional)
 
-The page is a pre-launch draft. Bracketed placeholders like `[ADRES DO UZUPEŁNIENIA]` are deliberate markers for client-supplied data, styled via `.placeholder-tag`. Do not invent real values to fill them — leave them until the client provides content. Currently pending: teacher bios/photos for the two `[Imię Nazwisko]` slots left in `#kadra`, testimonials, trial-lesson terms, `og:url` and `og:image`.
+The page is a pre-launch draft. Bracketed placeholders like `[ADRES DO UZUPEŁNIENIA]` are deliberate markers for client-supplied data, styled via `.placeholder-tag`. Do not invent real values to fill them — leave them until the client provides content. Currently pending: teacher bios for the two `[Imię Nazwisko]` slots left in `#kadra`, testimonials, trial-lesson terms, `og:url` and `og:image`.
+
+All four `.teacher-avatar` hexagons in `#kadra` currently show `user-placeholder.jpg` — a generic stand-in photo, not a real teacher — so the hexagon reads as "photo" rather than initials while real photos are pending. Swap each `<img>`'s `src` and `alt` for the actual teacher's photo/name as they're supplied; don't invent names or use stock photos as if they were real.
 
 **`.placeholder-tag`'s amber color is no longer a reliable "unfinished" signal** — the address/phone/email in `#kontakt` are real, filled-in values that intentionally keep the `.placeholder-tag` class because the client likes the amber color there (see the link-color convention above). Judge whether content is a real placeholder by the bracketed `[...]` text itself, not by its color.
 
