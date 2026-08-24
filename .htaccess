@@ -1,0 +1,9 @@
+# Blokada dostępu hasłem (Basic Auth) na czas przed wdrożeniem produkcyjnym.
+# Plik .htpasswd generujemy na serwerze (nigdy nie trafia do repo):
+#   sudo htpasswd -c /home/runcloud/webapps/[NAZWA-APPKI]/.htpasswd login
+# — trzymamy go poza katalogiem publicznym, ścieżkę AuthUserFile poniżej uzupełnić po wdrożeniu.
+
+AuthType Basic
+AuthName "Restricted Area"
+AuthUserFile [ŚCIEŻKA DO .htpasswd — UZUPEŁNIĆ PO WDROŻENIU]
+Require valid-user
