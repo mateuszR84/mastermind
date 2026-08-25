@@ -16,7 +16,9 @@ No toolchain. Open `index.html` in a browser, or serve it:
 python3 -m http.server 8000
 ```
 
-There are no tests, linter, or package manager. Changes are verified visually.
+There are no tests, linter, or package manager. Changes are verified visually — the client (Mateusz) checks in a real browser himself, so don't spin up a dev server, screenshot tooling, or other scripts to self-verify after an edit unless he asks for it; it's redundant with his own check and wastes time. Just make the change and say what you changed.
+
+**Cache-busting:** every static asset is referenced with a `?v=N` query param (`styles.css?v=3`, `back-to-top.js?v=1`, `contact-form.js?v=1`) because the production VPS/Cloudflare edge cache has served stale files after deploy before (see git history — a stale `styles.css` once caused both success/error form banners to show at once). **Any edit to `styles.css`, `back-to-top.js`, or `contact-form.js` must bump that file's `?v=N` in `index.html` to the next integer**, even for small changes — otherwise the fix won't actually reach the client's browser after deploy. `index.html` itself isn't versioned (browsers don't long-cache the HTML entry point).
 
 ## Structure and conventions
 

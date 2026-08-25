@@ -107,7 +107,9 @@ a.placeholder-tag:hover { color: var(--mint); }
 .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 20px; }
 .subject-card { padding: 28px; }
 .subject-card:hover { border-color: var(--mint-35); }
+.subject-card > i { color: var(--mint); font-size: 26px; }
 .subject-card h3 { font-size: 17px; margin-top: 14px; margin-bottom: 8px; }
+.subject-notes { list-style: none; font-size: 13px; color: var(--text-dim); line-height: 1.5; margin: 8px 0 0; padding: 0; }
 .offer-featured { grid-column: span 2; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; }
 .offer-featured h3 { font-size: 20px; margin-top: 16px; margin-bottom: 8px; }
 .tag-row { display: flex; gap: 8px; margin-top: 20px; }
