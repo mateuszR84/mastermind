@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://szkola-mastermind.pl/sitemap.xml
