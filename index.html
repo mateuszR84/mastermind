@@ -31,7 +31,7 @@
     <!-- TODO: og:url (adres domeny) i og:image (1200x630) po wdrożeniu -->
 
     <link rel="stylesheet"
-          href="styles.css?v=3">
+          href="styles.css?v=4">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
 
@@ -77,8 +77,6 @@
                href="#cennik">Cennik</a>
             <a class="nav-link"
                href="#kadra">Kadra</a>
-            <a class="nav-link"
-               href="#opinie">Opinie</a>
             <a class="nav-link"
                href="#faq">FAQ</a>
             <a class="nav-link"
@@ -284,31 +282,32 @@
             <h2>Nasi nauczyciele</h2>
             <p class="section-lead placeholder-tag">Poznaj naszą kadrę</p>
 
-            <!-- Zdjęcia nauczycieli: user-placeholder.jpg to tymczasowy placeholder dla wszystkich czterech.
-           Docelowo podmienić src (i alt="Imię Nazwisko") na realne zdjęcie każdego nauczyciela —
-           sześciokąt (clip-path) przytnie je automatycznie, obraz wypełnia go przez object-fit: cover. -->
+            <!-- Zdjęcia nauczycieli: na razie brak realnych zdjęć wszystkich czterech, więc w hexagonie
+           tymczasowo ikona fa-chalkboard-user zamiast <img>. Docelowo podmienić na
+           <img src="..." alt="Imię Nazwisko"> — sześciokąt (clip-path) przytnie je automatycznie,
+           obraz wypełnia go przez object-fit: cover (patrz .teacher-avatar img w styles.css). -->
             <div class="grid-4">
                 <div class="card teacher-card">
-                    <div class="teacher-avatar"><img src="user-placeholder.jpg"
-                             alt=""></div>
+                    <div class="teacher-avatar"><i class="fa-solid fa-chalkboard-user"
+                            aria-hidden="true"></i></div>
                     <h3 class="placeholder-tag">mgr Bożena Tałaj</h3>
                     <div class="teacher-subject">Język polski</div>
                 </div>
                 <div class="card teacher-card">
-                    <div class="teacher-avatar"><img src="user-placeholder.jpg"
-                             alt=""></div>
+                    <div class="teacher-avatar"><i class="fa-solid fa-chalkboard-user"
+                            aria-hidden="true"></i></div>
                     <h3 class="placeholder-tag">mgr Aleksandra Wyrazik</h3>
                     <div class="teacher-subject">Matematyka</div>
                 </div>
                 <div class="card teacher-card">
-                    <div class="teacher-avatar"><img src="user-placeholder.jpg"
-                             alt=""></div>
+                    <div class="teacher-avatar"><i class="fa-solid fa-chalkboard-user"
+                            aria-hidden="true"></i></div>
                     <h3 class="placeholder-tag">[Imię Nazwisko]</h3>
                     <div class="teacher-subject">Język angielski</div>
                 </div>
                 <div class="card teacher-card">
-                    <div class="teacher-avatar"><img src="user-placeholder.jpg"
-                             alt=""></div>
+                    <div class="teacher-avatar"><i class="fa-solid fa-chalkboard-user"
+                            aria-hidden="true"></i></div>
                     <h3 class="placeholder-tag">mgr Barbara Sajda</h3>
                     <div class="teacher-subject">Biologia</div>
                     <!-- <p class="muted small">[Krótki opis doświadczenia i wykształcenia]</p> -->
@@ -317,7 +316,7 @@
         </div>
     </section>
 
-    <!-- OPINIE -->
+    <!-- OPINIE — hidden until real reviews exist (school starts 2026-09-14, can't have testimonials yet). Section left in place, not deleted, to bring back later.
     <section id="opinie"
              class="section-pad">
         <div class="wrap">
@@ -445,10 +444,11 @@
             </div>
         </div>
     </section>
+    -->
 
     <!-- FAQ -->
     <section id="faq"
-             class="section-pad alt-bg">
+             class="section-pad">
         <div class="wrap wrap-narrow">
             <div class="eyebrow eyebrow-center">
                 <div class="pegs"><span></span><span></span><span></span><span></span></div>
@@ -497,7 +497,7 @@
 
     <!-- KONTAKT -->
     <section id="kontakt"
-             class="section-pad">
+             class="section-pad alt-bg">
         <div class="wrap">
             <div class="eyebrow">
                 <div class="pegs"><span></span><span></span><span></span><span></span></div>
