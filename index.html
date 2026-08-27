@@ -33,7 +33,7 @@
     <!-- TODO: og:image (1200x630) — czeka na plik od klienta -->
 
     <link rel="stylesheet"
-          href="styles.css?v=4">
+          href="styles.css?v=5">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
 
@@ -141,12 +141,12 @@
     <section id="oferta"
              class="section-pad alt-bg">
         <div class="wrap">
-            <div class="eyebrow">
+            <div class="eyebrow reveal">
                 <div class="pegs"><span></span><span></span><span></span><span></span></div>
                 <span class="eyebrow-text">Oferta</span>
             </div>
-            <h2>Przedmioty i poziomy nauczania</h2>
-            <p class="section-lead">Grupy dobieramy według poziomu i tempa nauki, nie tylko wieku — dzięki temu każdy
+            <h2 class="reveal">Przedmioty i poziomy nauczania</h2>
+            <p class="section-lead reveal">Grupy dobieramy według poziomu i tempa nauki, nie tylko wieku — dzięki temu każdy
                 uczy się w komfortowym dla siebie tempie.</p>
 
             <div class="grid-3">
@@ -162,7 +162,7 @@
           </div>
         </div> -->
 
-                <div class="card subject-card">
+                <div class="card subject-card reveal">
                     <i class="fa-solid fa-square-root-variable"
                        aria-hidden="true"></i>
                     <h3>Matematyka</h3>
@@ -174,7 +174,7 @@
                     <span class="level">Szkoła Podstawowa · Liceum</span>
                 </div>
 
-                <div class="card subject-card">
+                <div class="card subject-card reveal">
                     <i class="fa-solid fa-book"
                        aria-hidden="true"></i>
                     <h3>Język polski</h3>
@@ -186,7 +186,7 @@
                     <span class="level">Szkoła Podstawowa · Liceum</span>
                 </div>
 
-                <div class="card subject-card">
+                <div class="card subject-card reveal">
                     <i class="fa-solid fa-language"
                        aria-hidden="true"></i>
                     <h3>Język angielski</h3>
@@ -194,7 +194,7 @@
                     <span class="level">Szkoła Podstawowa · Liceum</span>
                 </div>
 
-                <div class="card subject-card">
+                <div class="card subject-card reveal">
                     <i class="fa-solid fa-dna"
                        aria-hidden="true"></i>
                     <h3>Biologia</h3>
@@ -202,7 +202,7 @@
                     <span class="level">Szkoła Podstawowa · Liceum</span>
                 </div>
 
-                <div class="card subject-card">
+                <div class="card subject-card reveal">
                     <i class="fa-solid fa-flask"
                        aria-hidden="true"></i>
                     <h3>Chemia</h3>
@@ -217,16 +217,16 @@
     <section id="cennik"
              class="section-pad">
         <div class="wrap">
-            <div class="eyebrow">
+            <div class="eyebrow reveal">
                 <div class="pegs"><span></span><span></span><span></span><span></span></div>
                 <span class="eyebrow-text">Cennik</span>
             </div>
-            <h2>Programy przygotowawcze do egzaminów</h2>
-            <p class="section-lead">Zajęcia grupowe raz w tygodniu, w trybie całorocznym, prowadzone aż do terminu
+            <h2 class="reveal">Programy przygotowawcze do egzaminów</h2>
+            <p class="section-lead reveal">Zajęcia grupowe raz w tygodniu, w trybie całorocznym, prowadzone aż do terminu
                 egzaminu.</p>
 
             <div class="grid-3 price-grid">
-                <div class="card price-card">
+                <div class="card price-card reveal">
                     <h3>Egzamin ósmoklasisty</h3>
                     <p class="muted small">Przygotowanie do egzaminu ósmoklasisty.</p>
                     <div class="price">250 zł</div>
@@ -241,7 +241,7 @@
                        class="btn btn-primary btn-block">Zapisz się</a>
                 </div>
 
-                <div class="card price-card">
+                <div class="card price-card reveal">
                     <h3>Matura podstawowa</h3>
                     <p class="muted small">Przygotowanie do matury na poziomie podstawowym.</p>
                     <div class="price">250 zł</div>
@@ -256,7 +256,7 @@
                        class="btn btn-primary btn-block">Zapisz się</a>
                 </div>
 
-                <div class="card price-card">
+                <div class="card price-card reveal">
                     <h3>Matura rozszerzona</h3>
                     <p class="muted small">Przygotowanie do matury na poziomie rozszerzonym.</p>
                     <div class="price">350 zł</div>
@@ -278,37 +278,37 @@
     <section id="kadra"
              class="section-pad alt-bg">
         <div class="wrap">
-            <div class="eyebrow">
+            <div class="eyebrow reveal">
                 <div class="pegs"><span></span><span></span><span></span><span></span></div>
                 <span class="eyebrow-text">Kadra</span>
             </div>
-            <h2>Nasi nauczyciele</h2>
-            <p class="section-lead placeholder-tag">Poznaj naszą kadrę</p>
+            <h2 class="reveal">Nasi nauczyciele</h2>
+            <p class="section-lead placeholder-tag reveal">Poznaj naszą kadrę</p>
 
             <!-- Zdjęcia nauczycieli: na razie brak realnych zdjęć wszystkich czterech, więc w hexagonie
            tymczasowo ikona fa-chalkboard-user zamiast <img>. Docelowo podmienić na
            <img src="..." alt="Imię Nazwisko"> — sześciokąt (clip-path) przytnie je automatycznie,
            obraz wypełnia go przez object-fit: cover (patrz .teacher-avatar img w styles.css). -->
             <div class="grid-4">
-                <div class="card teacher-card">
+                <div class="card teacher-card reveal">
                     <div class="teacher-avatar"><i class="fa-solid fa-chalkboard-user"
                             aria-hidden="true"></i></div>
                     <h3 class="placeholder-tag">mgr Bożena Tałaj</h3>
                     <div class="teacher-subject">Język polski</div>
                 </div>
-                <div class="card teacher-card">
+                <div class="card teacher-card reveal">
                     <div class="teacher-avatar"><i class="fa-solid fa-chalkboard-user"
                             aria-hidden="true"></i></div>
                     <h3 class="placeholder-tag">mgr Aleksandra Wyrazik</h3>
                     <div class="teacher-subject">Matematyka</div>
                 </div>
-                <div class="card teacher-card">
+                <div class="card teacher-card reveal">
                     <div class="teacher-avatar"><i class="fa-solid fa-chalkboard-user"
                             aria-hidden="true"></i></div>
                     <h3 class="placeholder-tag">[Imię Nazwisko]</h3>
                     <div class="teacher-subject">Język angielski</div>
                 </div>
-                <div class="card teacher-card">
+                <div class="card teacher-card reveal">
                     <div class="teacher-avatar"><i class="fa-solid fa-chalkboard-user"
                             aria-hidden="true"></i></div>
                     <h3 class="placeholder-tag">mgr Barbara Sajda</h3>
@@ -453,21 +453,21 @@
     <section id="faq"
              class="section-pad">
         <div class="wrap wrap-narrow">
-            <div class="eyebrow eyebrow-center">
+            <div class="eyebrow eyebrow-center reveal">
                 <div class="pegs"><span></span><span></span><span></span><span></span></div>
                 <span class="eyebrow-text">FAQ</span>
             </div>
-            <h2 class="center">Najczęściej zadawane pytania</h2>
+            <h2 class="center reveal">Najczęściej zadawane pytania</h2>
 
             <div class="faq-list">
-                <details class="card faq-item">
+                <details class="card faq-item reveal">
                     <summary>
                         <span class="faq-q">Ile osób jest w grupie na korepetycjach?</span>
                         <span class="faq-plus">+</span>
                     </summary>
                     <p class="muted">W naszej szkole grupy liczą od 8 do 12 osób.</p>
                 </details>
-                <details class="card faq-item">
+                <details class="card faq-item reveal">
                     <summary>
                         <span class="faq-q">Jak zapisać dziecko na zajęcia?</span>
                         <span class="faq-plus">+</span>
@@ -476,7 +476,7 @@
                         lub zadzwonić. Ustalimy poziom i przedmiot, a następnie dobierzemy grupę o odpowiadającym
                         Twojemu dziecku tempie nauki.</p>
                 </details>
-                <details class="card faq-item">
+                <details class="card faq-item reveal">
                     <summary>
                         <span class="faq-q">Czy zajęcia odbywają się stacjonarnie czy online?</span>
                         <span class="faq-plus">+</span>
@@ -484,7 +484,7 @@
                     <p class="muted">Zajęcia odbywają się wyłącznie stacjonarnie w siedzibie naszej
                         szkoły przy ulicy Długiej w Staszowie.</p>
                 </details>
-                <details class="card faq-item">
+                <details class="card faq-item reveal">
                     <summary>
                         <span class="faq-q">Jakie przedmioty są dostępne?</span>
                         <span class="faq-plus">+</span>
@@ -502,14 +502,14 @@
     <section id="kontakt"
              class="section-pad alt-bg">
         <div class="wrap">
-            <div class="eyebrow">
+            <div class="eyebrow reveal">
                 <div class="pegs"><span></span><span></span><span></span><span></span></div>
                 <span class="eyebrow-text">Kontakt</span>
             </div>
-            <h2>Zapisz się lub zapytaj o szczegóły</h2>
+            <h2 class="reveal">Zapisz się lub zapytaj o szczegóły</h2>
 
             <div class="kontakt-split">
-                <div class="kontakt-info">
+                <div class="kontakt-info reveal">
                     <div class="card map-embed">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2534.3346703663055!2d21.16394397680763!3d50.56514177909876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d580b982cc079%3A0x8bd055ff304e0a25!2zRMWCdWdhIDYsIDI4LTIwMCBTdGFzesOzdw!5e0!3m2!1spl!2spl!4v1787566170539!5m2!1spl!2spl"
                                 width="600"
@@ -549,7 +549,7 @@
                     </div>
                 </div>
 
-                <form class="contact-form"
+                <form class="contact-form reveal"
                       action="https://formspree.io/f/xyegaqlo"
                       method="POST">
                     <div id="kontakt-dziekujemy"
@@ -639,6 +639,8 @@
     <script src="back-to-top.js?v=1"
             defer></script>
     <script src="contact-form.js?v=1"
+            defer></script>
+    <script src="scroll-reveal.js?v=1"
             defer></script>
 </body>
 
