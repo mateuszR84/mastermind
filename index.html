@@ -18,7 +18,6 @@
     <link rel="apple-touch-icon"
           href="apple-touch-icon.png">
 
-    <!-- Skraca połączenie do Google Maps zanim iframe w #kontakt (loading="lazy") zacznie się ładować -->
     <link rel="preconnect"
           href="https://www.google.com">
     <link rel="preconnect"
@@ -38,14 +37,11 @@
           content="Korepetycje grupowe w Staszowie — matematyka, język polski, angielski, biologia i chemia. Kameralne grupy 8–12 osób, doświadczeni nauczyciele.">
     <meta property="og:url"
           content="https://szkola-mastermind.pl/">
-    <!-- TODO: og:image (1200x630) — czeka na plik od klienta -->
-
     <link rel="stylesheet"
-          href="styles.css?v=6">
+          href="styles.css?v=7">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
 
-    <!-- Font Awesome (kit) — ikony jako <i class="fa-..."></i> -->
     <script src="https://kit.fontawesome.com/3b577f4961.js"
             crossorigin="anonymous"></script>
 
@@ -71,7 +67,6 @@
 
 <body>
 
-    <!-- HEADER -->
     <header class="site-header">
         <a href="#top"
            class="logo">
@@ -97,7 +92,6 @@
            class="btn btn-primary btn-sm">Zapisz się</a>
     </header>
 
-    <!-- HERO -->
     <section id="top"
              class="hero section-pad">
         <div class="hero-split">
@@ -145,7 +139,6 @@
         </div>
     </section>
 
-    <!-- OFERTA -->
     <section id="oferta"
              class="section-pad alt-bg">
         <div class="wrap">
@@ -158,18 +151,6 @@
                 uczy się w komfortowym dla siebie tempie.</p>
 
             <div class="grid-3">
-                <!-- <div class="card offer-featured subject-card">
-          <div>
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="1.6"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 3v18M4 7.5l8 4.5 8-4.5"/></svg>
-            <h3>Przygotowanie do matury</h3>
-            <p class="muted">Intensywne grupy maturalne z matematyki, polskiego i angielskiego — powtórki, arkusze, strategia egzaminacyjna.</p>
-          </div>
-          <div class="tag-row">
-            <span class="tag">Liceum</span>
-            <span class="tag">Matura</span>
-          </div>
-        </div> -->
-
                 <div class="card subject-card reveal">
                     <i class="fa-solid fa-square-root-variable"
                        aria-hidden="true"></i>
@@ -221,7 +202,6 @@
         </div>
     </section>
 
-    <!-- CENNIK -->
     <section id="cennik"
              class="section-pad">
         <div class="wrap">
@@ -282,7 +262,6 @@
         </div>
     </section>
 
-    <!-- KADRA -->
     <section id="kadra"
              class="section-pad alt-bg">
         <div class="wrap">
@@ -293,10 +272,6 @@
             <h2 class="reveal">Nasi nauczyciele</h2>
             <p class="section-lead placeholder-tag reveal">Poznaj naszą kadrę</p>
 
-            <!-- Zdjęcia nauczycieli: na razie brak realnych zdjęć, więc w hexagonie
-           tymczasowo ikona fa-chalkboard-user zamiast <img>. Docelowo podmienić na
-           <img src="..." alt="Imię Nazwisko"> — sześciokąt (clip-path) przytnie je automatycznie,
-           obraz wypełnia go przez object-fit: cover (patrz .teacher-avatar img w styles.css). -->
             <div class="grid-4">
                 <div class="card teacher-card reveal">
                     <div class="teacher-avatar"><i class="fa-solid fa-chalkboard-user"
@@ -315,143 +290,11 @@
                             aria-hidden="true"></i></div>
                     <h3 class="placeholder-tag">mgr Barbara Sajda</h3>
                     <div class="teacher-subject">Biologia</div>
-                    <!-- <p class="muted small">[Krótki opis doświadczenia i wykształcenia]</p> -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- OPINIE — hidden until real reviews exist (school starts 2026-09-14, can't have testimonials yet). Section left in place, not deleted, to bring back later.
-    <section id="opinie"
-             class="section-pad">
-        <div class="wrap">
-            <div class="eyebrow">
-                <div class="pegs"><span></span><span></span><span></span><span></span></div>
-                <span class="eyebrow-text">Opinie</span>
-            </div>
-            <h2>Co mówią rodzice i uczniowie</h2>
-
-            <div class="grid-3">
-                <div class="card review-card">
-                    <div class="stars">
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                    </div>
-                    <p class="review-text placeholder-tag">[Treść opinii — cytat rodzica lub ucznia o zajęciach
-                        grupowych]</p>
-                    <div class="review-name placeholder-tag">[Imię Nazwisko]</div>
-                    <div class="review-role">Rodzic ucznia</div>
-                </div>
-                <div class="card review-card">
-                    <div class="stars">
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                    </div>
-                    <p class="review-text placeholder-tag">[Treść opinii — cytat rodzica lub ucznia o zajęciach
-                        grupowych]</p>
-                    <div class="review-name placeholder-tag">[Imię Nazwisko]</div>
-                    <div class="review-role">Uczeń, liceum</div>
-                </div>
-                <div class="card review-card">
-                    <div class="stars">
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                        <svg width="16"
-                             height="16"
-                             viewBox="0 0 24 24"
-                             fill="var(--mint)">
-                            <path d="M12 2l2.9 6.9L22 9.6l-5.5 4.9L18.2 22 12 18l-6.2 4 1.7-7.5L2 9.6l7.1-.7L12 2z" />
-                        </svg>
-                    </div>
-                    <p class="review-text placeholder-tag">[Treść opinii — cytat rodzica lub ucznia o zajęciach
-                        grupowych]</p>
-                    <div class="review-name placeholder-tag">[Imię Nazwisko]</div>
-                    <div class="review-role">Rodzic ucznia</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-
-    <!-- FAQ -->
     <section id="faq"
              class="section-pad">
         <div class="wrap wrap-narrow">
@@ -500,7 +343,6 @@
         </div>
     </section>
 
-    <!-- KONTAKT -->
     <section id="kontakt"
              class="section-pad alt-bg">
         <div class="wrap">
@@ -606,7 +448,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
         <div class="footer-brand">
             <div class="logo-mark logo-mark-sm"><span>MM</span></div>
@@ -637,7 +478,6 @@
            aria-hidden="true"></i>
     </button>
 
-    <!-- Pozostałe pierwszoosobowe skrypty poza kitem Font Awesome — patrz konwencja JS w CLAUDE.md. -->
     <script src="back-to-top.js?v=1"
             defer></script>
     <script src="contact-form.js?v=1"
